@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule, } from './app.routes';
+import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [],
   imports: [
-    BrowserModule, 
+    BrowserModule,
+    RouterModule,
     AppRoutingModule,
     AppComponent,
     AngularFireModule.initializeApp(environment.firebaseConfig),
